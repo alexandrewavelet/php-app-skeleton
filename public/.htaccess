@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteCond $1 !^(index\.php|public|css|js|robots\.txt)
+RewriteRule ^(.*)$ index.php/params=$1 [L,QSA]

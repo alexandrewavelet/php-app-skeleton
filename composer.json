@@ -1,0 +1,21 @@
+{
+  "name": "TSRDoc",
+  "description": "TSR documentation updater",
+  "license": "MIT",
+
+  "autoload": {
+    "psr-4": {
+      "TsrDoc\\": "src"
+    }
+  },
+  "require": {
+    "aws/aws-sdk-php": "^3.19",
+    "nikic/fast-route": "^1.0",
+    "alexandrewavelet/php-utils": "dev-master",
+    "filp/whoops": "^2.1",
+    "patricklouys/http": "^1.4",
+    "rdlowrey/auryn": "^1.4",
+    "mustache/mustache": "^2.11",
+    "twig/twig": "^1.24"
+  }
+}
