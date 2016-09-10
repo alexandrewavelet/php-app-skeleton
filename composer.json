@@ -1,11 +1,11 @@
 {
-  "name": "TSRDoc",
-  "description": "TSR documentation updater",
+  "name": "php-app-skeleton",
+  "description": "Skeleton for a simple PHP application",
   "license": "MIT",
 
   "autoload": {
     "psr-4": {
-      "TsrDoc\\": "src"
+      "Skeleton\\": "src"
     }
   },
   "require": {

@@ -1,10 +1,10 @@
 <?php
 
-namespace TsrDoc\Controllers;
+namespace Skeleton\Controllers;
 
 use Http\Request;
 use Http\Response;
-use TsrDoc\Templates\Renderer;
+use Skeleton\Templates\Renderer;
 
 class Documentation
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace TsrDoc\Models\FileSystem;
+namespace Skeleton\Models\FileSystem;
 
 use Aws\S3\S3Client;
 

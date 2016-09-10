@@ -1,6 +1,6 @@
 <?php
 
-namespace TsrDoc\Templates;
+namespace Skeleton\Templates;
 
 interface Renderer
 {
