@@ -13,18 +13,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/alexandrewavelet/PHPUtils.git",
-                "reference": "ad3b132a1eecf713672f5430c71a7ccf79c93c3d"
+                "reference": "7448668f4412cff0cb83fab5f3d101b5a356c30e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alexandrewavelet/PHPUtils/zipball/ad3b132a1eecf713672f5430c71a7ccf79c93c3d",
-                "reference": "ad3b132a1eecf713672f5430c71a7ccf79c93c3d",
+                "url": "https://api.github.com/repos/alexandrewavelet/PHPUtils/zipball/7448668f4412cff0cb83fab5f3d101b5a356c30e",
+                "reference": "7448668f4412cff0cb83fab5f3d101b5a356c30e",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "PhpUtils": "src"
+                "psr-4": {
+                    "PhpUtils\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -32,7 +32,7 @@
                 "MIT"
             ],
             "description": "Set of utility PHP classes for any project",
-            "time": "2016-09-09 08:15:35"
+            "time": "2016-10-12 09:46:23"
         },
         {
             "name": "filp/whoops",
