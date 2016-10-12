@@ -5,11 +5,10 @@ use PhpUtils\Types\Str;
 
 require(__DIR__.'/../vendor/autoload.php');
 
+$environment = 'development';
 
 // Error handling
 error_reporting(E_ALL);
-
-$environment = 'development';
 
 $whoops = new \Whoops\Run;
 if ($environment !== 'production') {
@@ -64,10 +63,18 @@ switch ($routeInfo[0]) {
     case FastRoute\Dispatcher::FOUND:
         $class = $routeInfo[1][0];
         $method = $routeInfo[1][1];
-        $vars = $routeInfo[2];
+        $arguments = new Collection($routeInfo[2]);
+
+        $reflectionMethod = new ReflectionMethod($class, $method);
+        $orderedArguments = Collection::make($reflectionMethod->getParameters())
+            ->map(function ($parameter) use ($arguments) {
+                /** @var ReflectionParameter $parameter */
+                return ($arguments->offsetExists($parameter->getName())) ?
+                    $arguments->getItem($parameter->getName()) : $parameter->getClass()->name;
+            });
 
         $controller = $injector->make($class);
-        call_user_func_array([$controller, $method], $vars);
+        call_user_func_array([$controller, $method], $orderedArguments->toArray());
         break;
 }
 

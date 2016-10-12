@@ -1,0 +1,27 @@
+.main {
+    margin-top: 30px;
+}
+
+/*
+Fix for foundation tooltips
+see https://github.com/zurb/foundation-sites/issues/8929
+*/
+.tooltip:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: .9rem;
+    border-color: transparent transparent #0a0a0a;
+    border-style: inset;
+}
+
+.tooltip.left:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: .9rem;
+    border-color: transparent transparent transparent #000;
+    border-style: inset;
+}

@@ -1,21 +1,20 @@
 {
-  "name": "php-app-skeleton",
-  "description": "Skeleton for a simple PHP application",
-  "license": "MIT",
+    "name": "php-app-skeleton",
+    "description": "Simple PHP application skeleton",
+    "license": "MIT",
 
-  "autoload": {
-    "psr-4": {
-      "Skeleton\\": "src"
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "src"
+        }
+    },
+    "require": {
+        "nikic/fast-route": "^1.0",
+        "alexandrewavelet/php-utils": "dev-master",
+        "filp/whoops": "^2.1",
+        "patricklouys/http": "^1.4",
+        "rdlowrey/auryn": "^1.4",
+        "twig/twig": "^1.24",
+        "twig/extensions": "^1.4"
     }
-  },
-  "require": {
-    "aws/aws-sdk-php": "^3.19",
-    "nikic/fast-route": "^1.0",
-    "alexandrewavelet/php-utils": "dev-master",
-    "filp/whoops": "^2.1",
-    "patricklouys/http": "^1.4",
-    "rdlowrey/auryn": "^1.4",
-    "mustache/mustache": "^2.11",
-    "twig/twig": "^1.24"
-  }
 }

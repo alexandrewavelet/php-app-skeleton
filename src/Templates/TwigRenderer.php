@@ -1,6 +1,6 @@
 <?php
 
-namespace Skeleton\Templates;
+namespace MyApp\Templates;
 
 use Twig_Environment;
 
@@ -15,6 +15,6 @@ class TwigRenderer implements Renderer
 
     public function render($template, $data = [])
     {
-        return $this->renderer->render($template.'.html', $data);
+        return $this->renderer->render($template.'.twig', $data);
     }
 }

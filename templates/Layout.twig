@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Documentation manager</title>
+        <link rel="stylesheet" href="{{ app.assets.foundation.css }}">
+        <link rel="stylesheet" href="{{ app.assets.main.icons }}">
+        <link rel="stylesheet" href="{{ app.assets.main.css }}">
+    </head>
+
+    <body>
+        <div class="top-bar">
+            <div class="top-bar-title">
+                <ul class="menu">
+                    <li class="menu-text">Documentation manager</li>
+                </ul>
+            </div>
+            <div>
+                <div class="top-bar-right">
+                    <ul class="menu">
+                        <li><a href="mailto:alexandre.wavelet@careerbuilder.com" class="button">Report issue</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row main">
+            {% block body %}
+            {% endblock body %}
+        </div>
+
+        <script type="text/javascript" src="{{ app.assets.jquery }}"></script>
+        <script type="text/javascript" src="{{ app.assets.foundation.js }}"></script>
+        <script type="text/javascript" src="{{ app.assets.main.js.global }}"></script>
+        {% block additionnalJS %}
+        {% endblock %}
+    </body>
+</html>

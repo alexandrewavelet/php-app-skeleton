@@ -1,6 +1,6 @@
 <?php
 
-namespace Skeleton\Templates;
+namespace MyApp\Templates;
 
 interface Renderer
 {
